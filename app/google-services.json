@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "711001500767",
+    "project_id": "nasiya-uz",
+    "storage_bucket": "nasiya-uz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711001500767:android:4aed57ce19587b24413fea",
+        "android_client_info": {
+          "package_name": "com.example.nasiyauz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711001500767-i8q5nsgdcd0d9chcaq0vdqlhuaqcne7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nasiyauz",
+            "certificate_hash": "53f7639c36cfd655b11a0f48860a55d280b51007"
+          }
+        },
+        {
+          "client_id": "711001500767-l4l8i5acjhniklmbgvl45vh8t8ipikna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsxBmjGEmZ5mLp13DfcMXUw4_D4oaUMqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711001500767-l4l8i5acjhniklmbgvl45vh8t8ipikna.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

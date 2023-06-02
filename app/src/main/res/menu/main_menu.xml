@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_menu1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/customers_fragment"
+            android:icon="@drawable/baseline_person_24"
+            android:title="@string/customers" />
+
+        <item
+            android:id="@+id/create_fragment"
+            android:icon="@drawable/baseline_create_24"
+            android:title="@string/create" />
+
+        <item
+            android:id="@+id/recent_fragment"
+            android:icon="@drawable/round_history_24"
+            android:title="@string/history" />
+
+    </group>
+
+    <group android:id="@+id/group_menu2">
+
+        <item
+            android:id="@+id/settings_fragment"
+            android:icon="@drawable/round_settings_24"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/log_out"
+            android:icon="@drawable/round_exit_to_app_24"
+            android:title="@string/log_out" />
+
+
+    </group>
+
+</menu>

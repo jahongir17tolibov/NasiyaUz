@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_background_color">#012B47</color>
+    <color name="light_dark_color">#D8EFFF</color>
+    <color name="secondary_dark_light_color">#0092FF</color>
+    <color name="action_bar_color">#313339</color>
+    <color name="shadow_background_color">#0E0E0E</color>
+</resources>

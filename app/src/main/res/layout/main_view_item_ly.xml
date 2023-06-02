@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/shadow_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/my_top_btn_false"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:rotation="30"
+            android:src="@drawable/outline_push_pin_24"
+            app:tint="@color/light_dark_color" />
+
+        <ImageView
+            android:id="@+id/my_top_btn_true"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:rotation="30"
+            android:src="@drawable/round_push_pin_24"
+            android:visibility="gone"
+            app:tint="@color/light_dark_color" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:paddingHorizontal="8dp">
+
+            <TextView
+                android:id="@+id/customers_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/niramit"
+                android:singleLine="true"
+                android:textColor="@color/light_dark_color"
+                android:textSize="@dimen/bigger_text"
+                android:textStyle="bold"
+                tools:text="Customers name" />
+
+            <TextView
+                android:id="@+id/customers_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/niramit"
+                android:singleLine="true"
+                android:textColor="@color/light_dark_color"
+                android:textSize="@dimen/normal_text"
+                tools:text="+99890 900 1755" />
+
+            <TextView
+                android:id="@+id/customers_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/niramit"
+                android:singleLine="true"
+                android:textSize="@dimen/smaller_text"
+                tools:text="28.03.2021" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/round_clear_24"
+            app:tint="@color/light_dark_color" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

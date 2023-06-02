@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name" translatable="false">NasiyaUz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="customers">Mijozlar</string>
+    <string name="create">Yangi nasiya</string>
+    <string name="history">Tarix</string>
+    <string name="settings">Sozlamalar</string>
+    <string name="log_out">Akkauntdan chiqish</string>
+    <string name="users_name_hint">Qarzdor ismi</string>
+    <string name="users_number_hint">+9989</string>
+    <string name="description_hint">Yozishni boshlang</string>
+    <string name="name_number_error_txt">Qarzdorning ismi va telefon raqami kiritilishi shart</string>
+    <string name="type_your_email_txt">Type your Email</string>
+    <string name="type_your_password_txt">Type your Password</string>
+    <string name="re_type_your_password_txt">Retype Password</string>
+    <string name="register_txt">Register</string>
+    <string name="reg_google_txt">Register with google</string>
+    <string name="register_to_login_txt">Already registered?</string>
+    <string name="loading_txt">Loading…</string>
+    <string name="require_field_txt">This is required field</string>
+    <string name="email_format_error_txt">Check email format!</string>
+    <string name="alredy_registred_email_txt">This Email is already registered</string>
+    <string name="error_server_text">Some problem with the server</string>
+    <string name="pass_8_char_long_txt">Password should at least 8 characters long</string>
+    <string name="parol_equal_txt">Password mismatch</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="customers">Клиенты</string>
+    <string name="create">Новый долг</string>
+    <string name="history">Недавние</string>
+    <string name="settings">Настройки</string>
+    <string name="log_out">Выйти из аккаунта</string>
+    <string name="users_name_hint">Имя должника</string>
+    <string name="users_number_hint">+9989</string>
+    <string name="description_hint">Начать ввод</string>
+    <string name="name_number_error_txt">Необходимо ввести имя и номер телефона заемщика</string>
+    <string name="type_your_email_txt">Введите адрес электронной почты</string>
+    <string name="type_your_password_txt">Введите свой пароль</string>
+    <string name="re_type_your_password_txt">Подтвердите пароль</string>
+    <string name="register_txt">Регистрация</string>
+    <string name="reg_google_txt">Зарегистрируйтесь c Google</string>
+    <string name="register_to_login_txt">Уже зарегистрирован?</string>
+    <string name="loading_txt">Загрузка…</string>
+    <string name="require_field_txt">Это обязательное поле</string>
+    <string name="email_format_error_txt">Проверьте формат электронной почты!</string>
+    <string name="alredy_registred_email_txt">Этот адрес уже зарегистрирован</string>
+    <string name="error_server_text">Какая-то проблема с сервером</string>
+    <string name="pass_8_char_long_txt">Пароль должен быть не менее 8 символов</string>
+    <string name="parol_equal_txt">Пароли не совпадают</string>
+</resources>

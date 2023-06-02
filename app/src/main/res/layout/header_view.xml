@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background_color"
+    android:fitsSystemWindows="false"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/light_dark_btn"
+        style="@style/light_dark_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/comp_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_dark_color"
+        android:textSize="@dimen/bigger_text"
+        android:textStyle="bold"
+        app:fontFamily="@font/niramit"
+        app:layout_constraintEnd_toStartOf="@+id/light_dark_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/light_dark_btn"
+        tools:text="Company name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elegantTextHeight="true"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textColor="@color/light_dark_color"
+        android:textSize="@dimen/normal_text"
+        app:fontFamily="@font/niramit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/light_dark_btn"
+        app:layout_constraintStart_toStartOf="@+id/comp_name"
+        app:layout_constraintTop_toBottomOf="@id/comp_name"
+        tools:text="+998 90 900 1755" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

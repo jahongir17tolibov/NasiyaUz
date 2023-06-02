@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.screens.NoteFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:fitsSystemWindows="true"
+        tools:visibility="visible">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="snap|scroll"
+            app:navigationIcon="@drawable/round_arrow_back_24"
+            app:navigationIconTint="@color/light_dark_color">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/niramit"
+                    android:text="19 yanvar 2023, 0:25" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/color_picker"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@android:color/holo_green_dark"
+                    android:backgroundTintMode="multiply"
+                    app:cardCornerRadius="15dp"
+                    app:strokeColor="@android:color/transparent" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_users_name"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:fontFamily="@font/niramit"
+                android:hint="@string/users_name_hint"
+                android:maxLines="1"
+                android:paddingHorizontal="6dp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/light_dark_color"
+                android:textSize="@dimen/bigger_text"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_users_number"
+                    style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/niramit"
+                    android:hint="@string/users_number_hint"
+                    android:inputType="phone|number"
+                    android:maxLength="13"
+                    android:maxLines="1"
+                    android:paddingHorizontal="6dp"
+                    android:scrollbars="horizontal"
+                    android:textColor="@color/light_dark_color"
+                    android:textSize="@dimen/normal_text"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/data_picker"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_calendar_month_24"
+                    app:tint="@color/light_dark_color" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                app:dividerColor="@color/light_dark_color" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_text"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/niramit"
+                android:hint="@string/description_hint"
+                android:inputType="textMultiLine"
+                android:minHeight="50dp"
+                android:paddingHorizontal="6dp"
+                android:textColor="@color/light_dark_color"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:nestedScrollingEnabled="true"
+        android:src="@drawable/round_done_24"
+        android:tint="@color/light_dark_color"
+        app:backgroundTint="@color/main_background_color"
+        app:borderWidth="0.5dp"
+        app:fabSize="normal" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
